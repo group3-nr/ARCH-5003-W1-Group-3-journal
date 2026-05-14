@@ -1,0 +1,86 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+
+<!--title-->
+<h1><p>Gathering Visuals</p></h1>
+
+
+<!--content-->
+<body>
+<br></br>
+
+<button onclick="playAllVideos()">Play All Videos</button>
+
+
+<!--videos-->
+<div class="three-columns">
+	<div class="column content">
+		<p><video width="320" height="180"  controls>
+			<source src= "assets/gb_vid_1.mp4" type= "video/mp4">
+			sorry this video isnt avalible right now
+		</video></p>
+		<p><video width= "320" height= "180" controls>
+			<source src= "assets/gb_vid_2.mp4" type= "video/mp4">
+			sorry this video isnt avalible right now
+		</video></p>
+		<p><video width= "320" height= "180" controls>
+			<source src= "assets/gb_vid_3.mp4" type= "video/mp4">
+			sorry this video isnt avalible right now
+		</video></p>
+	</div>
+	<div class="column content">
+		<p><video width= "320" height= "180" controls>
+			<source src= "assets/gb_vid_4.mp4" type= "video/mp4">
+			sorry this video isnt avalible right now
+		</video></p>
+		<p><video width= "320" height= "180" controls>
+			<source src= "assets/gb_vid_long.mp4" type= "video/mp4">
+			sorry this video isnt avalible right now
+		</video></p>
+		<p><video width= "320" height= "180" controls>
+			<source src= "assets/gb_vid_5.mp4" type= "video/mp4">
+			sorry this video isnt avalible right now
+		</video></p>
+	</div>
+	<div class="column content">
+		<p><video width= "320" height= "180" controls>
+			<source src= "assets/gb_vid_6.mp4" type= "video/mp4">
+			sorry this video isnt avalible right now
+		</video></p>
+		<p><video width= "320" height= "180" controls>
+			<source src= "assets/gb_vid_7.mp4" type= "video/mp4">
+			sorry this video isnt avalible right now
+		</video></p>
+		<p><video width= "320" height= "180" controls>
+			<source src= "assets/gb_vid_8.mp4" type= "video/mp4">
+			sorry this video isnt avalible right now
+		</video></p>
+	</div>
+</div>
+<br></br>
+<br></br>
+
+
+<!--links-->
+<p><a href="concept development.html">Concept Development</a></p>
+<p><a href="home page.html">Home Page</a></p>
+
+
+<script>
+function playAllVideos() {
+    // This finds every <video> tag on the page
+    var videos = document.querySelectorAll('video');
+    
+    // This loops through them and plays each one
+    videos.forEach(function(video) {
+        video.play();
+    });
+}
+</script>
+
+<br></br>
+</body>
+</html>
